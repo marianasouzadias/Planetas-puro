@@ -3,14 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Planetas</title>
+    <title>Explorando o Sistema Solar</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>Sistema Solar</h1>
+    <div>
+      <h1>Bem vindo ao nosso Sistema Solar!</h1>
+      <p>
+        Explore a maravilha celestial que é o nosso Sistema Solar, uma dança
+        cósmica de corpos celestes em torno de nossa estrela, o Sol. Navegue
+        pelos links abaixo para descobrir mais sobre cada planeta:
+      </p>
+      <img
+        src="data:image/jpeg;base64,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"
+        alt="sistema solar"
+      />
+    </div>
     <nav>
       <ul>
-        <a href="mercurio.html" onclick="showPlanet('mercurio')">Mercúrio</a>
-        <a href="#" onclick="showPlanet('venus')">Vênus</a>
+        <a href="#" onclick="showPlanet('mercurio.html')">Mercúrio</a>
+        <a href="#" onclick="showPlanet('venus.html')">Vênus</a>
         <a href="#" onclick="showPlanet('terra')">Terra</a>
         <a href="#" onclick="showPlanet('marte')">Marte</a>
         <a href="#" onclick="showPlanet('jupiter')">Júpiter</a>
@@ -19,5 +31,22 @@
         <a href="#" onclick="showPlanet('netuno')">Netuno</a>
       </ul>
     </nav>
+    <div id="content">
+      <p>
+        Cada planeta possui suas próprias características únicas, mistérios
+        intrigantes e histórias fascinantes. Clique nos links para embarcar em
+        uma jornada interplanetária e explorar as maravilhas do espaço!
+      </p>
+    </div>
+
+    <script>
+      function showPlanet(page) {
+        fetch(page)
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("content").innerHTML = data;
+          });
+      }
+    </script>
   </body>
 </html>
